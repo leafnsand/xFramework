@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAC1EC77-5C31-4E74-8935-3C3321447199}</ProjectGuid>
+    <RootNamespace>AzCore</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin64\</OutDir>
+    <IntDir>$(SolutionDir)BinTemp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="base.h" />
+    <ClInclude Include="Debug\StackTracer.h" />
+    <ClInclude Include="Debug\Trace.h" />
+    <ClInclude Include="Debug\TraceMessageBus.h" />
+    <ClInclude Include="EBus\BusContainer.h" />
+    <ClInclude Include="EBus\BusImpl.h" />
+    <ClInclude Include="EBus\EBus.h" />
+    <ClInclude Include="EBus\HandlerContainer.h" />
+    <ClInclude Include="EBus\Policies.h" />
+    <ClInclude Include="EBus\Results.h" />
+    <ClInclude Include="Jobs\Internal\JobManagerBase.h" />
+    <ClInclude Include="Jobs\Internal\JobManagerDefault.h" />
+    <ClInclude Include="Jobs\Internal\JobManagerSynchronous.h" />
+    <ClInclude Include="Jobs\Internal\JobManagerWorkStealing.h" />
+    <ClInclude Include="Jobs\Internal\JobNotify.h" />
+    <ClInclude Include="Jobs\Job.h" />
+    <ClInclude Include="Jobs\JobCancelGroup.h" />
+    <ClInclude Include="Jobs\JobCompletion.h" />
+    <ClInclude Include="Jobs\JobCompletionSpin.h" />
+    <ClInclude Include="Jobs\JobContext.h" />
+    <ClInclude Include="Jobs\JobEmpty.h" />
+    <ClInclude Include="Jobs\JobFunction.h" />
+    <ClInclude Include="Jobs\JobManager.h" />
+    <ClInclude Include="Jobs\JobManagerBus.h" />
+    <ClInclude Include="Jobs\JobManagerDesc.h" />
+    <ClInclude Include="Jobs\MultipleDependentJob.h" />
+    <ClInclude Include="Math\Crc.h" />
+    <ClInclude Include="Math\Guid.h" />
+    <ClInclude Include="Math\MathUtils.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Math\Sfmt.h" />
+    <ClInclude Include="Math\Sha1.h" />
+    <ClInclude Include="Math\Uuid.h" />
+    <ClInclude Include="Memory\AllocatorBase.h" />
+    <ClInclude Include="Memory\AllocatorManager.h" />
+    <ClInclude Include="Memory\BestFitExternalMapAllocator.h" />
+    <ClInclude Include="Memory\BestFitExternalMapSchema.h" />
+    <ClInclude Include="Memory\HeapSchema.h" />
+    <ClInclude Include="Memory\HphaSchema.h" />
+    <ClInclude Include="Memory\Memory.h" />
+    <ClInclude Include="Memory\OSAllocator.h" />
+    <ClInclude Include="Memory\PoolAllocator.h" />
+    <ClInclude Include="Memory\PoolSchema.h" />
+    <ClInclude Include="Memory\SystemAllocator.h" />
+    <ClInclude Include="Module\Environment.h" />
+    <ClInclude Include="Outcome\Internal\OutcomeImpl.h" />
+    <ClInclude Include="Outcome\Internal\OutcomeStorage.h" />
+    <ClInclude Include="Outcome\Outcome.h" />
+    <ClInclude Include="PlatformDef.h" />
+    <ClInclude Include="PlatformIncl.h" />
+    <ClInclude Include="RTTI\RTTI.h" />
+    <ClInclude Include="RTTI\TypeInfo.h" />
+    <ClInclude Include="std\algorithm.h" />
+    <ClInclude Include="std\allocator.h" />
+    <ClInclude Include="std\allocator_ref.h" />
+    <ClInclude Include="std\allocator_stack.h" />
+    <ClInclude Include="std\allocator_static.h" />
+    <ClInclude Include="std\any.h" />
+    <ClInclude Include="std\base.h" />
+    <ClInclude Include="std\bind\apply.h" />
+    <ClInclude Include="std\bind\arg.h" />
+    <ClInclude Include="std\bind\bind.h" />
+    <ClInclude Include="std\bind\bind_cc.h" />
+    <ClInclude Include="std\bind\bind_mf2_cc.h" />
+    <ClInclude Include="std\bind\bind_mf_cc.h" />
+    <ClInclude Include="std\bind\bind_template.h" />
+    <ClInclude Include="std\bind\make_adaptable.h" />
+    <ClInclude Include="std\bind\mem_fn.h" />
+    <ClInclude Include="std\bind\mem_fn_cc.h" />
+    <ClInclude Include="std\bind\mem_fn_template.h" />
+    <ClInclude Include="std\bind\mem_fn_vw.h" />
+    <ClInclude Include="std\bind\placeholders.h" />
+    <ClInclude Include="std\bind\protect.h" />
+    <ClInclude Include="std\bind\storage.h" />
+    <ClInclude Include="std\chrono\chrono.h" />
+    <ClInclude Include="std\chrono\clocks.h" />
+    <ClInclude Include="std\chrono\types.h" />
+    <ClInclude Include="std\config.h" />
+    <ClInclude Include="std\containers\array.h" />
+    <ClInclude Include="std\containers\bitset.h" />
+    <ClInclude Include="std\containers\deque.h" />
+    <ClInclude Include="std\containers\fixed_forward_list.h" />
+    <ClInclude Include="std\containers\fixed_list.h" />
+    <ClInclude Include="std\containers\fixed_unordered_map.h" />
+    <ClInclude Include="std\containers\fixed_unordered_set.h" />
+    <ClInclude Include="std\containers\fixed_vector.h" />
+    <ClInclude Include="std\containers\forward_list.h" />
+    <ClInclude Include="std\containers\intrusive_list.h" />
+    <ClInclude Include="std\containers\intrusive_set.h" />
+    <ClInclude Include="std\containers\intrusive_slist.h" />
+    <ClInclude Include="std\containers\list.h" />
+    <ClInclude Include="std\containers\map.h" />
+    <ClInclude Include="std\containers\queue.h" />
+    <ClInclude Include="std\containers\rbtree.h" />
+    <ClInclude Include="std\containers\ring_buffer.h" />
+    <ClInclude Include="std\containers\set.h" />
+    <ClInclude Include="std\containers\stack.h" />
+    <ClInclude Include="std\containers\unordered_map.h" />
+    <ClInclude Include="std\containers\unordered_set.h" />
+    <ClInclude Include="std\containers\vector.h" />
+    <ClInclude Include="std\createdestroy.h" />
+    <ClInclude Include="std\delegate\delegate.h" />
+    <ClInclude Include="std\delegate\delegate_bind.h" />
+    <ClInclude Include="std\delegate\delegate_fwd.h" />
+    <ClInclude Include="std\docs.h" />
+    <ClInclude Include="std\exceptions.h" />
+    <ClInclude Include="std\functional.h" />
+    <ClInclude Include="std\functional_basic.h" />
+    <ClInclude Include="std\function\function_base.h" />
+    <ClInclude Include="std\function\function_fwd.h" />
+    <ClInclude Include="std\function\function_template.h" />
+    <ClInclude Include="std\function\maybe_include.h" />
+    <ClInclude Include="std\hash.h" />
+    <ClInclude Include="std\hash_table.h" />
+    <ClInclude Include="std\iterator.h" />
+    <ClInclude Include="std\parallel\atomic.h" />
+    <ClInclude Include="std\parallel\binary_semaphore.h" />
+    <ClInclude Include="std\parallel\combinable.h" />
+    <ClInclude Include="std\parallel\conditional_variable.h" />
+    <ClInclude Include="std\parallel\config.h" />
+    <ClInclude Include="std\parallel\containers\concurrent_fixed_unordered_map.h" />
+    <ClInclude Include="std\parallel\containers\concurrent_fixed_unordered_set.h" />
+    <ClInclude Include="std\parallel\containers\concurrent_unordered_map.h" />
+    <ClInclude Include="std\parallel\containers\concurrent_unordered_set.h" />
+    <ClInclude Include="std\parallel\containers\concurrent_vector.h" />
+    <ClInclude Include="std\parallel\containers\internal\concurrent_hash_table.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_intrusive_stack.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_intrusive_stamped_stack.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_queue.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_stack.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_stamped_queue.h" />
+    <ClInclude Include="std\parallel\containers\lock_free_stamped_stack.h" />
+    <ClInclude Include="std\parallel\containers\work_stealing_queue.h" />
+    <ClInclude Include="std\parallel\exponential_backoff.h" />
+    <ClInclude Include="std\parallel\internal\conditional_variable_win.h" />
+    <ClInclude Include="std\parallel\internal\mutex_win.h" />
+    <ClInclude Include="std\parallel\internal\semaphore_win.h" />
+    <ClInclude Include="std\parallel\internal\thread_win.h" />
+    <ClInclude Include="std\parallel\lock.h" />
+    <ClInclude Include="std\parallel\mutex.h" />
+    <ClInclude Include="std\parallel\semaphore.h" />
+    <ClInclude Include="std\parallel\shared_mutex.h" />
+    <ClInclude Include="std\parallel\shared_spin_mutex.h" />
+    <ClInclude Include="std\parallel\spin_mutex.h" />
+    <ClInclude Include="std\parallel\thread.h" />
+    <ClInclude Include="std\parallel\threadbus.h" />
+    <ClInclude Include="std\ratio.h" />
+    <ClInclude Include="std\smart_ptr\checked_delete.h" />
+    <ClInclude Include="std\smart_ptr\enable_shared_from_this.h" />
+    <ClInclude Include="std\smart_ptr\enable_shared_from_this2.h" />
+    <ClInclude Include="std\smart_ptr\intrusive_ptr.h" />
+    <ClInclude Include="std\smart_ptr\make_shared.h" />
+    <ClInclude Include="std\smart_ptr\scoped_array.h" />
+    <ClInclude Include="std\smart_ptr\scoped_ptr.h" />
+    <ClInclude Include="std\smart_ptr\shared_array.h" />
+    <ClInclude Include="std\smart_ptr\shared_count.h" />
+    <ClInclude Include="std\smart_ptr\shared_ptr.h" />
+    <ClInclude Include="std\smart_ptr\sp_convertible.h" />
+    <ClInclude Include="std\smart_ptr\unique_ptr.h" />
+    <ClInclude Include="std\smart_ptr\weak_ptr.h" />
+    <ClInclude Include="std\sort.h" />
+    <ClInclude Include="std\string\alphanum.h" />
+    <ClInclude Include="std\string\const_string.h" />
+    <ClInclude Include="std\string\conversions.h" />
+    <ClInclude Include="std\string\conversions_winrt.h" />
+    <ClInclude Include="std\string\osstring.h" />
+    <ClInclude Include="std\string\regex.h" />
+    <ClInclude Include="std\string\string.h" />
+    <ClInclude Include="std\string\string_view.h" />
+    <ClInclude Include="std\string\tokenize.h" />
+    <ClInclude Include="std\string\utf8\core.h" />
+    <ClInclude Include="std\string\utf8\unchecked.h" />
+    <ClInclude Include="std\string\wildcard.h" />
+    <ClInclude Include="std\time.h" />
+    <ClInclude Include="std\typetraits\add_const.h" />
+    <ClInclude Include="std\typetraits\add_cv.h" />
+    <ClInclude Include="std\typetraits\add_pointer.h" />
+    <ClInclude Include="std\typetraits\add_reference.h" />
+    <ClInclude Include="std\typetraits\add_volatile.h" />
+    <ClInclude Include="std\typetraits\aligned_storage.h" />
+    <ClInclude Include="std\typetraits\alignment_of.h" />
+    <ClInclude Include="std\typetraits\bool_trait_def.h" />
+    <ClInclude Include="std\typetraits\conditional.h" />
+    <ClInclude Include="std\typetraits\config.h" />
+    <ClInclude Include="std\typetraits\decay.h" />
+    <ClInclude Include="std\typetraits\extent.h" />
+    <ClInclude Include="std\typetraits\function_traits.h" />
+    <ClInclude Include="std\typetraits\has_member_function.h" />
+    <ClInclude Include="std\typetraits\has_nothrow_assign.h" />
+    <ClInclude Include="std\typetraits\has_nothrow_constructor.h" />
+    <ClInclude Include="std\typetraits\has_nothrow_copy.h" />
+    <ClInclude Include="std\typetraits\has_nothrow_destructor.h" />
+    <ClInclude Include="std\typetraits\has_trivial_assign.h" />
+    <ClInclude Include="std\typetraits\has_trivial_constructor.h" />
+    <ClInclude Include="std\typetraits\has_trivial_copy.h" />
+    <ClInclude Include="std\typetraits\has_trivial_destructor.h" />
+    <ClInclude Include="std\typetraits\has_virtual_destructor.h" />
+    <ClInclude Include="std\typetraits\ice.h" />
+    <ClInclude Include="std\typetraits\integral_constant.h" />
+    <ClInclude Include="std\typetraits\internal\cv_traits_impl.h" />
+    <ClInclude Include="std\typetraits\internal\false_result.h" />
+    <ClInclude Include="std\typetraits\internal\ice_and.h" />
+    <ClInclude Include="std\typetraits\internal\ice_eq.h" />
+    <ClInclude Include="std\typetraits\internal\ice_not.h" />
+    <ClInclude Include="std\typetraits\internal\ice_or.h" />
+    <ClInclude Include="std\typetraits\internal\is_function_ptr_helper.h" />
+    <ClInclude Include="std\typetraits\internal\is_function_ptr_tester.h" />
+    <ClInclude Include="std\typetraits\internal\is_mem_fun_pointer_impl.h" />
+    <ClInclude Include="std\typetraits\internal\is_mem_fun_pointer_tester.h" />
+    <ClInclude Include="std\typetraits\internal\type_sequence_traits.h" />
+    <ClInclude Include="std\typetraits\internal\wrap.h" />
+    <ClInclude Include="std\typetraits\internal\yes_no_type.h" />
+    <ClInclude Include="std\typetraits\intrinsics.h" />
+    <ClInclude Include="std\typetraits\is_abstract.h" />
+    <ClInclude Include="std\typetraits\is_arithmetic.h" />
+    <ClInclude Include="std\typetraits\is_array.h" />
+    <ClInclude Include="std\typetraits\is_base_and_derived.h" />
+    <ClInclude Include="std\typetraits\is_base_of.h" />
+    <ClInclude Include="std\typetraits\is_class.h" />
+    <ClInclude Include="std\typetraits\is_complex.h" />
+    <ClInclude Include="std\typetraits\is_compound.h" />
+    <ClInclude Include="std\typetraits\is_const.h" />
+    <ClInclude Include="std\typetraits\is_convertible.h" />
+    <ClInclude Include="std\typetraits\is_empty.h" />
+    <ClInclude Include="std\typetraits\is_enum.h" />
+    <ClInclude Include="std\typetraits\is_floating_point.h" />
+    <ClInclude Include="std\typetraits\is_function.h" />
+    <ClInclude Include="std\typetraits\is_fundamental.h" />
+    <ClInclude Include="std\typetraits\is_integral.h" />
+    <ClInclude Include="std\typetraits\is_lvalue_reference.h" />
+    <ClInclude Include="std\typetraits\is_member_function_pointer.h" />
+    <ClInclude Include="std\typetraits\is_member_object_pointer.h" />
+    <ClInclude Include="std\typetraits\is_member_pointer.h" />
+    <ClInclude Include="std\typetraits\is_object.h" />
+    <ClInclude Include="std\typetraits\is_pod.h" />
+    <ClInclude Include="std\typetraits\is_pointer.h" />
+    <ClInclude Include="std\typetraits\is_polymorphic.h" />
+    <ClInclude Include="std\typetraits\is_reference.h" />
+    <ClInclude Include="std\typetraits\is_same.h" />
+    <ClInclude Include="std\typetraits\is_scalar.h" />
+    <ClInclude Include="std\typetraits\is_signed.h" />
+    <ClInclude Include="std\typetraits\is_stateless.h" />
+    <ClInclude Include="std\typetraits\is_union.h" />
+    <ClInclude Include="std\typetraits\is_unsigned.h" />
+    <ClInclude Include="std\typetraits\is_void.h" />
+    <ClInclude Include="std\typetraits\is_volatile.h" />
+    <ClInclude Include="std\typetraits\object_traits.h" />
+    <ClInclude Include="std\typetraits\rank.h" />
+    <ClInclude Include="std\typetraits\reference_traits.h" />
+    <ClInclude Include="std\typetraits\remove_all_extents.h" />
+    <ClInclude Include="std\typetraits\remove_bounds.h" />
+    <ClInclude Include="std\typetraits\remove_const.h" />
+    <ClInclude Include="std\typetraits\remove_cv.h" />
+    <ClInclude Include="std\typetraits\remove_extent.h" />
+    <ClInclude Include="std\typetraits\remove_pointer.h" />
+    <ClInclude Include="std\typetraits\remove_reference.h" />
+    <ClInclude Include="std\typetraits\remove_volatile.h" />
+    <ClInclude Include="std\typetraits\same_traits.h" />
+    <ClInclude Include="std\typetraits\size_t_trait_def.h" />
+    <ClInclude Include="std\typetraits\transform_traits.h" />
+    <ClInclude Include="std\typetraits\tuple_traits.h" />
+    <ClInclude Include="std\typetraits\typetraits.h" />
+    <ClInclude Include="std\typetraits\type_id.h" />
+    <ClInclude Include="std\typetraits\type_trait_def.h" />
+    <ClInclude Include="std\typetraits\underlying_type.h" />
+    <ClInclude Include="std\typetraits\void_t.h" />
+    <ClInclude Include="std\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base.cpp" />
+    <ClCompile Include="Debug\StackTracer.cpp" />
+    <ClCompile Include="Debug\Trace.cpp" />
+    <ClCompile Include="Jobs\Internal\JobManagerBase.cpp" />
+    <ClCompile Include="Jobs\Internal\JobManagerDefault.cpp" />
+    <ClCompile Include="Jobs\Internal\JobManagerSynchronous.cpp" />
+    <ClCompile Include="Jobs\Internal\JobManagerWorkStealing.cpp" />
+    <ClCompile Include="Jobs\JobContext.cpp" />
+    <ClCompile Include="Jobs\JobManager.cpp" />
+    <ClCompile Include="Math\Crc.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="Math\Sfmt.cpp" />
+    <ClCompile Include="Math\Uuid.cpp" />
+    <ClCompile Include="Memory\AllocatorBase.cpp" />
+    <ClCompile Include="Memory\AllocatorManager.cpp" />
+    <ClCompile Include="Memory\BestFitExternalMapAllocator.cpp" />
+    <ClCompile Include="Memory\BestFitExternalMapSchema.cpp" />
+    <ClCompile Include="Memory\HeapSchema.cpp" />
+    <ClCompile Include="Memory\HphaSchema.cpp" />
+    <ClCompile Include="Memory\Memory.cpp" />
+    <ClCompile Include="Memory\OSAllocator.cpp" />
+    <ClCompile Include="Memory\PoolAllocator.cpp" />
+    <ClCompile Include="Memory\PoolSchema.cpp" />
+    <ClCompile Include="Memory\SystemAllocator.cpp" />
+    <ClCompile Include="Module\Environment.cpp" />
+    <ClCompile Include="std\allocator.cpp" />
+    <ClCompile Include="std\hash.cpp" />
+    <ClCompile Include="std\parallel\internal\thread_win.cpp" />
+    <ClCompile Include="std\string\alphanum.cpp" />
+    <ClCompile Include="std\string\regex.cpp" />
+    <ClCompile Include="std\string\string.cpp" />
+    <ClCompile Include="std\time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\StackTracerWinCpp.inl" />
+    <None Include="Memory\dlmalloc.inl" />
+    <None Include="Memory\nedmalloc.inl" />
+    <None Include="std\parallel\internal\atomic_impl.inl" />
+    <None Include="std\parallel\internal\atomic_impl_locks.inl" />
+    <None Include="std\parallel\internal\atomic_impl_x64.inl" />
+    <None Include="std\parallel\internal\atomic_impl_x86.inl" />
+    <None Include="std\parallel\internal\atomic_impl_x86_x64.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

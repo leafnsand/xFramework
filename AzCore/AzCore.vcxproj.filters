@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="PlatformDef.h" />
+    <ClInclude Include="base.h" />
+    <ClInclude Include="PlatformIncl.h" />
+    <ClInclude Include="std\algorithm.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\allocator.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\allocator_ref.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\allocator_stack.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\allocator_static.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\any.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\base.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\config.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\createdestroy.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\docs.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\exceptions.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\functional.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\functional_basic.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\hash.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\hash_table.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\iterator.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\ratio.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\sort.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\time.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\utils.h">
+      <Filter>std</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\apply.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\arg.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\bind.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\bind_cc.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\bind_mf_cc.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\bind_mf2_cc.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\bind_template.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\make_adaptable.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\mem_fn.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\mem_fn_cc.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\mem_fn_template.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\mem_fn_vw.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\placeholders.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\protect.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\bind\storage.h">
+      <Filter>std\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="std\chrono\chrono.h">
+      <Filter>std\chrono</Filter>
+    </ClInclude>
+    <ClInclude Include="std\chrono\clocks.h">
+      <Filter>std\chrono</Filter>
+    </ClInclude>
+    <ClInclude Include="std\chrono\types.h">
+      <Filter>std\chrono</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\array.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\bitset.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\deque.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\fixed_forward_list.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\fixed_list.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\fixed_unordered_map.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\fixed_unordered_set.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\fixed_vector.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\forward_list.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\intrusive_list.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\intrusive_set.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\intrusive_slist.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\list.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\map.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\queue.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\rbtree.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\ring_buffer.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\set.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\stack.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\unordered_map.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\unordered_set.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\containers\vector.h">
+      <Filter>std\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\delegate\delegate.h">
+      <Filter>std\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="std\delegate\delegate_bind.h">
+      <Filter>std\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="std\delegate\delegate_fwd.h">
+      <Filter>std\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="std\function\function_base.h">
+      <Filter>std\function</Filter>
+    </ClInclude>
+    <ClInclude Include="std\function\function_fwd.h">
+      <Filter>std\function</Filter>
+    </ClInclude>
+    <ClInclude Include="std\function\function_template.h">
+      <Filter>std\function</Filter>
+    </ClInclude>
+    <ClInclude Include="std\function\maybe_include.h">
+      <Filter>std\function</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\atomic.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\binary_semaphore.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\combinable.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\conditional_variable.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\config.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\exponential_backoff.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\lock.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\mutex.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\semaphore.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\shared_mutex.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\shared_spin_mutex.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\spin_mutex.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\thread.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\concurrent_fixed_unordered_map.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\concurrent_fixed_unordered_set.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\concurrent_unordered_map.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\concurrent_unordered_set.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\concurrent_vector.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_intrusive_stack.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_intrusive_stamped_stack.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_queue.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_stack.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_stamped_queue.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\lock_free_stamped_stack.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\work_stealing_queue.h">
+      <Filter>std\parallel\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\containers\internal\concurrent_hash_table.h">
+      <Filter>std\parallel\containers\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\internal\conditional_variable_win.h">
+      <Filter>std\parallel\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\internal\mutex_win.h">
+      <Filter>std\parallel\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\internal\semaphore_win.h">
+      <Filter>std\parallel\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\internal\thread_win.h">
+      <Filter>std\parallel\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\checked_delete.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\enable_shared_from_this.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\enable_shared_from_this2.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\intrusive_ptr.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\make_shared.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\scoped_array.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\scoped_ptr.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\shared_array.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\shared_count.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\shared_ptr.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\sp_convertible.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\unique_ptr.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\smart_ptr\weak_ptr.h">
+      <Filter>std\smart_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\alphanum.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\const_string.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\conversions.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\conversions_winrt.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\osstring.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\regex.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\string.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\string_view.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\tokenize.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\wildcard.h">
+      <Filter>std\string</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\utf8\core.h">
+      <Filter>std\string\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="std\string\utf8\unchecked.h">
+      <Filter>std\string\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\add_const.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\add_cv.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\add_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\add_reference.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\add_volatile.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\aligned_storage.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\alignment_of.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\bool_trait_def.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\conditional.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\config.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\decay.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\extent.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\function_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_member_function.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_nothrow_assign.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_nothrow_constructor.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_nothrow_copy.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_nothrow_destructor.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_trivial_assign.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_trivial_constructor.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_trivial_copy.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_trivial_destructor.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\has_virtual_destructor.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\ice.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\integral_constant.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\intrinsics.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_abstract.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_arithmetic.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_array.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_base_and_derived.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_base_of.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_class.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_complex.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_compound.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_const.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_convertible.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_empty.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_enum.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_floating_point.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_function.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_fundamental.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_integral.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_lvalue_reference.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_member_function_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_member_object_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_member_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_object.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_pod.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_polymorphic.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_reference.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_same.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_scalar.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_signed.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_stateless.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_union.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_unsigned.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_void.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\is_volatile.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\object_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\rank.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\reference_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_all_extents.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_bounds.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_const.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_cv.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_extent.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_pointer.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_reference.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\remove_volatile.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\same_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\size_t_trait_def.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\transform_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\tuple_traits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\type_id.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\type_trait_def.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\typetraits.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\underlying_type.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\void_t.h">
+      <Filter>std\typetraits</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\cv_traits_impl.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\false_result.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\ice_and.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\ice_eq.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\ice_not.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\ice_or.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\is_function_ptr_helper.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\is_function_ptr_tester.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\is_mem_fun_pointer_impl.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\is_mem_fun_pointer_tester.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\type_sequence_traits.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\wrap.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\typetraits\internal\yes_no_type.h">
+      <Filter>std\typetraits\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="std\parallel\threadbus.h">
+      <Filter>std\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\BusContainer.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\BusImpl.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\EBus.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\HandlerContainer.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\Policies.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="EBus\Results.h">
+      <Filter>EBus</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTI\RTTI.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTI\TypeInfo.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Crc.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Guid.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Sfmt.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Sha1.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Uuid.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Random.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\Trace.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\TraceMessageBus.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\StackTracer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Environment.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\AllocatorBase.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\AllocatorManager.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\BestFitExternalMapAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\BestFitExternalMapSchema.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\HeapSchema.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\HphaSchema.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Memory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\OSAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\PoolAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\PoolSchema.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\SystemAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Outcome\Outcome.h">
+      <Filter>Outcome</Filter>
+    </ClInclude>
+    <ClInclude Include="Outcome\Internal\OutcomeImpl.h">
+      <Filter>Outcome\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Outcome\Internal\OutcomeStorage.h">
+      <Filter>Outcome\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Job.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobCancelGroup.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobCompletion.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobCompletionSpin.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobContext.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobEmpty.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobFunction.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobManager.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobManagerBus.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\JobManagerDesc.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\MultipleDependentJob.h">
+      <Filter>Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Internal\JobManagerBase.h">
+      <Filter>Jobs\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Internal\JobManagerDefault.h">
+      <Filter>Jobs\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Internal\JobManagerSynchronous.h">
+      <Filter>Jobs\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Internal\JobManagerWorkStealing.h">
+      <Filter>Jobs\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Jobs\Internal\JobNotify.h">
+      <Filter>Jobs\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base.cpp" />
+    <ClCompile Include="std\allocator.cpp">
+      <Filter>std</Filter>
+    </ClCompile>
+    <ClCompile Include="std\hash.cpp">
+      <Filter>std</Filter>
+    </ClCompile>
+    <ClCompile Include="std\time.cpp">
+      <Filter>std</Filter>
+    </ClCompile>
+    <ClCompile Include="std\parallel\internal\thread_win.cpp">
+      <Filter>std\parallel\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="std\string\alphanum.cpp">
+      <Filter>std\string</Filter>
+    </ClCompile>
+    <ClCompile Include="std\string\regex.cpp">
+      <Filter>std\string</Filter>
+    </ClCompile>
+    <ClCompile Include="std\string\string.cpp">
+      <Filter>std\string</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Crc.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Sfmt.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Uuid.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\Trace.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\StackTracer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\Environment.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\AllocatorBase.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\AllocatorManager.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\BestFitExternalMapAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\BestFitExternalMapSchema.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\HeapSchema.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\HphaSchema.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\OSAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\PoolAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\PoolSchema.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\SystemAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\JobContext.cpp">
+      <Filter>Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\JobManager.cpp">
+      <Filter>Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\Internal\JobManagerBase.cpp">
+      <Filter>Jobs\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\Internal\JobManagerDefault.cpp">
+      <Filter>Jobs\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\Internal\JobManagerSynchronous.cpp">
+      <Filter>Jobs\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Jobs\Internal\JobManagerWorkStealing.cpp">
+      <Filter>Jobs\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="std">
+      <UniqueIdentifier>{84d1877b-69f1-427f-8c0c-8d0cf521f8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\bind">
+      <UniqueIdentifier>{5012788f-b9b9-41ac-a6f8-cbbee5aa90d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\chrono">
+      <UniqueIdentifier>{f6997974-fc1c-4675-89e7-3a1ae93baac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\containers">
+      <UniqueIdentifier>{77223b01-16cc-4663-b7fd-045da8768317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\delegate">
+      <UniqueIdentifier>{9bc89433-a227-4b7f-b812-7df8c91cf9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\function">
+      <UniqueIdentifier>{f558c283-4376-457b-929d-0999d796c79b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\parallel">
+      <UniqueIdentifier>{639f32a3-67ee-4b63-8bba-3cf20dcf5b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\parallel\containers">
+      <UniqueIdentifier>{3f1a031b-3af4-447c-b782-0d162be35aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\parallel\containers\internal">
+      <UniqueIdentifier>{cb3f6c44-2a23-41f7-8f71-7cb19b975676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\parallel\internal">
+      <UniqueIdentifier>{0ca1cf47-9990-4ea1-ae59-5b7a9f2310f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\smart_ptr">
+      <UniqueIdentifier>{115a9aff-93d1-49e3-b7ad-9dcc05e7292b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\string">
+      <UniqueIdentifier>{e47a159f-1bba-40fc-af17-fb8450b90917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\string\utf8">
+      <UniqueIdentifier>{af5956df-7ec6-4041-8c01-0695c9e852e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\typetraits">
+      <UniqueIdentifier>{6312ba70-8a36-4980-992d-1f003fb5e0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std\typetraits\internal">
+      <UniqueIdentifier>{d660d465-651d-40a0-bf38-1a43c82153a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EBus">
+      <UniqueIdentifier>{693405ef-9dd1-4243-ab11-6ec37ed75c03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI">
+      <UniqueIdentifier>{4ba29fcf-5e0b-4ce5-8326-e66ab3434d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{216ca8e7-3db5-4c1b-a246-22232e772f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{7510662f-12f1-4401-a524-c0f3ac8072af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{87d82067-9082-4f1e-88f5-5237126f5965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{cc4e666d-e07e-4bf6-81ea-a5d716d09806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outcome">
+      <UniqueIdentifier>{30321126-e93b-44b5-a760-b686d17cab40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Outcome\internal">
+      <UniqueIdentifier>{32d181f9-44a4-4090-8265-8ff882f20a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jobs">
+      <UniqueIdentifier>{711ea14d-805c-4d77-85a0-12dbf644ae94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jobs\internal">
+      <UniqueIdentifier>{aa52583d-8c19-4d50-bafa-ae7c82d136d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="std\parallel\internal\atomic_impl.inl">
+      <Filter>std\parallel\internal</Filter>
+    </None>
+    <None Include="std\parallel\internal\atomic_impl_locks.inl">
+      <Filter>std\parallel\internal</Filter>
+    </None>
+    <None Include="std\parallel\internal\atomic_impl_x64.inl">
+      <Filter>std\parallel\internal</Filter>
+    </None>
+    <None Include="std\parallel\internal\atomic_impl_x86.inl">
+      <Filter>std\parallel\internal</Filter>
+    </None>
+    <None Include="std\parallel\internal\atomic_impl_x86_x64.inl">
+      <Filter>std\parallel\internal</Filter>
+    </None>
+    <None Include="Debug\StackTracerWinCpp.inl">
+      <Filter>Debug</Filter>
+    </None>
+    <None Include="Memory\dlmalloc.inl">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="Memory\nedmalloc.inl">
+      <Filter>Memory</Filter>
+    </None>
+  </ItemGroup>
+</Project>
